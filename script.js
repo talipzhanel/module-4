@@ -26,7 +26,8 @@ async function searchImages() {
     const response = await fetch(url)
 
     const data    = await response.json()
-    const results = data.result
+    console.log(data)
+    const results = data.results
 
     if (page === 1) {
 searchResults.innerHTML = ""
