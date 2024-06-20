@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/bitcoin-block-parser" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module-4" vcs="Git" />
   </component>
 </project>

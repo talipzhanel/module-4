@@ -30,7 +30,7 @@ async function searchImages() {
     const results = data.results
 
     if (page === 1) {
-searchResults.innerHTML = ""
+        searchResults.innerHTML = ""
     }
 
     results.map((result) => {
