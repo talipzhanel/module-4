@@ -1,6 +1,6 @@
-const form = document.querySelector("form");
+const form   = document.querySelector("form");
 const input      = document.getElementById("search-input");
-const searchResults   = document.querySelector(".search-results");
+const searchResults  = document.querySelector(".search-results");
 const showMore   = document.getElementById("show-more-button");
 
 const accessKey = '-KD4d81hPzmencEB7rwNrK6wl2YyAL_pFcCQwFHyktY';
