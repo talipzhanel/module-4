@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sagatstyle.css">
     <title>Сағат</title>
+    <script src="sagatscript.js"></script>
 </head>
 <body onload="initClock()">
 
@@ -21,6 +23,25 @@
         <span id="period">AM</span>
     </div>
 </div>
+
+<div class="container">
+    <button id="open-calendar">Күнтізбе</button>
+
+    <div id="calendar" class="calendar hidden">
+        <div class="calendar-header">
+            <button id="prev-month">&#8249;</button>
+            <span id="month-year"></span>
+            <button id="next-month">&#8250;</button>
+        </div>
+        <div class="calendar-body">
+            <div class="day-names">
+                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+            </div>
+            <div id="days" class="days"></div>
+        </div>
+    </div>
+</div>
+
 
 <script type="text/javascript">
     function updateClock(){

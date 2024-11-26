@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin-top: 0px;
+    padding: 0px;
 }
 
 body{
@@ -59,4 +59,103 @@ body{
     margin-top: 10px;
     padding: 0 5px;
     border-radius: 3px;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /*background: #f4f4f4;*/
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 500px;
+    margin-bottom: 1px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.calendar {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.calendar-header button:hover {
+    font-weight: bold;
+}
+
+.calendar-body {
+    padding: 10px;
+}
+
+.day-names, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.day-names span {
+    font-weight: bold;
+    color: #666;
+}
+
+.days span {
+    padding: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.days span:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.days .selected {
+    background-color: #007bff;
+    color: white;
 }
